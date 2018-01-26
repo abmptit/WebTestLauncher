@@ -10,6 +10,11 @@ namespace SampleWebTest
     {
         static void Main(string[] args)
         {
+            var jsonTest = SeleniumTestExecutor.CreateJsonSampleTest();
+        }
+
+        static void InitializeSeleniumGrid(string[] args)
+        {
             if (SeleniumGridHelper.TestGrid())
             {
                 throw new Exception("Error on Grid Initialization, Grid is already started");

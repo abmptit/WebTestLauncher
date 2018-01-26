@@ -9,7 +9,18 @@
 
         public string Description { get; set; }
 
-        public List<Step> Steps { get; set; }
+        List<Step> _steps;
+        public List<Step> Steps
+        {
+            get
+            {
+                if(_steps == null)
+                {
+                    _steps = new List<Step>();
+                }
+                return _steps;
+            }
+         }
 
     }
 }
