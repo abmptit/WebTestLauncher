@@ -1,0 +1,8 @@
+D:\sources\github\SampleWebTest\SampleWebTest\bin\Debug\SampleWebTest.exe.config
+D:\sources\github\SampleWebTest\SampleWebTest\bin\Debug\SampleWebTest.exe
+D:\sources\github\SampleWebTest\SampleWebTest\bin\Debug\SampleWebTest.pdb
+D:\sources\github\SampleWebTest\SampleWebTest\obj\Debug\SampleWebTest.csprojResolveAssemblyReference.cache
+D:\sources\github\SampleWebTest\SampleWebTest\obj\Debug\SampleWebTest.exe
+D:\sources\github\SampleWebTest\SampleWebTest\obj\Debug\SampleWebTest.pdb
+D:\sources\github\SampleWebTest\SampleWebTest\bin\Debug\WebDriver.dll
+D:\sources\github\SampleWebTest\SampleWebTest\bin\Debug\WebDriver.xml
