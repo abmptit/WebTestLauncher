@@ -5,11 +5,11 @@
         /// <summary>
         /// Create Session
         /// </summary>
-        CREATE_SESSION,
+        CREATE_SESSION = 0,
 
         /// <summary>
         /// Navigate.
         /// </summary>
-        NAVIGATE_URL,
+        NAVIGATE_URL = 1,
     }
 }

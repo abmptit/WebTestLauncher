@@ -6,6 +6,12 @@
       "Name": "Open the browser",
       "Type": 0,
       "Description": "This step open the browser"
+    },
+    {
+      "Name": "Navigate to ",
+      "Type": 1,
+      "Url": "www.google.com",
+      "Description": "This step open the browser"
     }
   ]
 }

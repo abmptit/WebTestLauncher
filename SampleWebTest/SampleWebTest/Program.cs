@@ -10,7 +10,9 @@ namespace SampleWebTest
     {
         static void Main(string[] args)
         {
-            var jsonTest = SeleniumTestExecutor.CreateJsonSampleTest();
+            //var jsonTest = SeleniumTestExecutor.CreateJsonSampleTest();
+
+            SeleniumTestExecutor.ExecuteTestFromJson("Scenarios/Simple/CreateChromeSession.json");
         }
 
         static void InitializeSeleniumGrid(string[] args)
