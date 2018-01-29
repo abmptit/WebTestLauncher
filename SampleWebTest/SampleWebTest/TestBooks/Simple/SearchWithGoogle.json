@@ -10,7 +10,7 @@
     {
       "Name": "Navigate to ",
       "Type": 1,
-      "Url": "www.google.com",
+      "Page": "[google]",
       "Description": "This step open the browser"
     }
   ]

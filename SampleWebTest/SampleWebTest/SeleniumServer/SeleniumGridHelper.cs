@@ -10,11 +10,11 @@
         private const string _standAloneServerVersion = "SeleniumGrid.StandaloneServer.Version";
         public static Process InitializeGrid()
         {
-            bool standalone = SeleniumConfigHelper.GetBoolValue(_executeOnStandalone);
+            bool standalone = ConfigHelper.GetBoolValue(_executeOnStandalone);
 
             if (standalone)
             {
-                string seleniumServerVersion = SeleniumConfigHelper.GetStringValue(_standAloneServerVersion);
+                string seleniumServerVersion = ConfigHelper.GetStringValue(_standAloneServerVersion);
                 var strCmd = $"/K java -jar ../../SeleniumServer/{seleniumServerVersion}/selenium-server-standalone-{seleniumServerVersion}.jar";
                 //var strCmd = $"/K pwd";
                 Console.WriteLine($"Executing command : {strCmd}");

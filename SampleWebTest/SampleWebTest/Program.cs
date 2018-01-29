@@ -1,18 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SampleWebTest
+﻿namespace SampleWebTest
 {
+    using System;
+
     class Program
     {
         static void Main(string[] args)
         {
             //var jsonTest = SeleniumTestExecutor.CreateJsonSampleTest();
 
-            SeleniumTestExecutor.ExecuteTestFromJson("Scenarios/Simple/CreateChromeSession.json");
+            //SeleniumTestExecutor.ExecuteTestFromJson("TestBooks/Simple/CreateChromeSession.json");
         }
 
         static void InitializeSeleniumGrid(string[] args)

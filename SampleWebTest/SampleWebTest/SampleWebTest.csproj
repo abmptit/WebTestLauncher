@@ -54,19 +54,29 @@
   <ItemGroup>
     <Compile Include="Common\Enum\StepType.cs" />
     <Compile Include="Common\Enum\BrowserType.cs" />
-    <Compile Include="Common\Model\Test.cs" />
-    <Compile Include="Common\Model\Step.cs" />
-    <Compile Include="ConfigHelper.cs" />
+    <Compile Include="SiteMap\Models\Component.cs" />
+    <Compile Include="SiteMap\Models\Page.cs" />
+    <Compile Include="SeleniumClient\Helpers\WebDriverHelper.cs" />
+    <Compile Include="TestBooks\Models\Test.cs" />
+    <Compile Include="TestBooks\Models\Step.cs" />
+    <Compile Include="Common\Helpers\ConfigHelper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SeleniumGridHelper.cs" />
-    <Compile Include="SeleniumTestExecutor.cs" />
-    <Compile Include="SeleniumHelper.cs" />
+    <Compile Include="SeleniumClient\SeleniumConfig.cs" />
+    <Compile Include="SeleniumServer\SeleniumGridHelper.cs" />
+    <Compile Include="SeleniumClient\SeleniumTestExecutor.cs" />
+    <Compile Include="SeleniumClient\SeleniumHelper.cs" />
+    <Compile Include="SiteMap\SiteMapHelper.cs" />
+    <Compile Include="TestBooks\TestBookHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-    <Content Include="Scenarios\Simple\CreateChromeSession.json">
+    <Content Include="TestBooks\Simple\CreateChromeSession.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="SiteMap\External\google.json" />
+    <Content Include="TestBooks\Simple\SearchWithGoogle.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
@@ -74,9 +84,12 @@
     <Content Include="SeleniumServer\2.53.1\chromedriver.exe" />
     <Content Include="SeleniumServer\2.53.1\selenium-server-standalone-2.53.1.jar" />
     <Content Include="SeleniumServer\3.8.1\selenium-server-standalone-3.8.1.jar" />
-    <Content Include="WebDriver\ChromeDriver\2.34\chromedriver.exe" />
+    <Content Include="WebDriver\ChromeDriver\2.34\chromedriver.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Common\Model\" />
     <Folder Include="TestedSite\" />
     <Folder Include="WebDriver\ChromeDriver\2.35\" />
   </ItemGroup>

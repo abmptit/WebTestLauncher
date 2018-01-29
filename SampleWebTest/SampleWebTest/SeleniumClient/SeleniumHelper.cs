@@ -31,7 +31,7 @@
 
         private IWebDriver BuildChromeDriver()
         {
-            var location = $"{SeleniumConfigHelper.GetStringValue(_driverLocation)}\\ChromeDriver\\{SeleniumConfigHelper.GetStringValue(_chromeVersion)}";
+            var location = $"{ConfigHelper.GetSizeValue(_driverLocation)}\\ChromeDriver\\{ConfigHelper.GetSizeValue(_chromeVersion)}";
             var timeout = TimeSpan.FromSeconds(60);
             ChromeOptions options = new ChromeOptions();
             return new ChromeDriver(location, options, timeout);

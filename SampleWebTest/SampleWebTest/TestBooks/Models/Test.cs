@@ -1,9 +1,8 @@
-﻿namespace SampleWebTest.Common.Model
+﻿namespace SampleWebTest.TestBooks.Models
 {
-    using Enum;
     using System.Collections.Generic;
 
-    public class Test
+    public partial class Test
     {
         public string Name { get; set; }
 
@@ -14,13 +13,12 @@
         {
             get
             {
-                if(_steps == null)
+                if (_steps == null)
                 {
                     _steps = new List<Step>();
                 }
                 return _steps;
             }
-         }
-
+        }
     }
-}
+ }
