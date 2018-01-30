@@ -2,6 +2,7 @@
 {
     using System.Configuration;
     using System.Drawing;
+    using System.IO;
 
     public static class ConfigHelper
     {

@@ -1,0 +1,23 @@
+﻿{
+  "Name": "A sample test with two Steps",
+  "Description": "This Test ...",
+  "Steps": [
+    {
+      "Name": "Open the browser",
+      "Type": 0,
+      "Description": "This step open the browser"
+    },
+    {
+      "Name": "Navigate to ",
+      "Type": 1,
+      "Url": "http://www.google.com",
+      "Description": "This step open the browser"
+    },
+    {
+      "Name": "Click on",
+      "Type": 2,
+      "Url": "http://www.google.com",
+      "Description": "This step open the browser"
+    }
+  ]
+}

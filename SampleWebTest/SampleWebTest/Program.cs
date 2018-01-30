@@ -8,7 +8,7 @@
         {
             //var jsonTest = SeleniumTestExecutor.CreateJsonSampleTest();
 
-            //SeleniumTestExecutor.ExecuteTestFromJson("TestBooks/Simple/CreateChromeSession.json");
+            SeleniumTestExecutor.ExecuteTestFromJson("TestBooks/Simple/CreateChromeSession.json");
         }
 
         static void InitializeSeleniumGrid(string[] args)

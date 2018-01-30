@@ -52,11 +52,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common\Enum\SelectorType.cs" />
     <Compile Include="Common\Enum\StepType.cs" />
     <Compile Include="Common\Enum\BrowserType.cs" />
     <Compile Include="SiteMap\Models\Component.cs" />
     <Compile Include="SiteMap\Models\Page.cs" />
     <Compile Include="SeleniumClient\Helpers\WebDriverHelper.cs" />
+    <Compile Include="TestBooks\Models\Selector.cs" />
     <Compile Include="TestBooks\Models\Test.cs" />
     <Compile Include="TestBooks\Models\Step.cs" />
     <Compile Include="Common\Helpers\ConfigHelper.cs" />
