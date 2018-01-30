@@ -3,12 +3,11 @@
   "Description": "This Test ...",
   "Steps": [
     {
-      "Name": "Open the browser",
-      "Type": 0,
+      "Name": "CREATE_SESSION",
       "Description": "This step open the browser"
     },
     {
-      "Name": "Navigate to ",
+      "Name": "NAVIGATE_URL",
       "Type": 1,
       "Url": "http://www.google.com",
       "Description": "This step open the browser"

@@ -1,4 +1,4 @@
-﻿namespace SampleWebTest.Common.Model.SiteMap
+﻿namespace SampleWebTest.SiteMap.Models
 {
     using System.Collections.Generic;
 
@@ -8,16 +8,18 @@
 
         public string Description { get; set; }
 
-        List<Component> _component;
-        public List<Component> Components
+        public object Url { get; set; }
+
+        List<Selector> _selectors;
+        public List<Selector> Selectors
         {
             get
             {
-                if (_component == null)
+                if (_selectors == null)
                 {
-                    _component = new List<Component>();
+                    _selectors = new List<Selector>();
                 }
-                return _component;
+                return _selectors;
             }
         }
     }

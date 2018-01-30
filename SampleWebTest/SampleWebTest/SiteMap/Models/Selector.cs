@@ -1,4 +1,4 @@
-﻿namespace SampleWebTest.TestBooks.Models
+﻿namespace SampleWebTest.SiteMap.Models
 {
     using SampleWebTest.Common.Enum;
 

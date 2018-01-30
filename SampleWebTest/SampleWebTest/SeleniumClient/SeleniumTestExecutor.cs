@@ -14,7 +14,7 @@
         public static string CreateJsonSampleTest()
         {
             Test newTest = new Test() { Name = "My First Test", Description = "This Test ..." };
-            Step createSession = new Step() { Type = StepType.CREATE_SESSION, Name = "Open the browser", Description = "This step open the browser" };
+            Step createSession = new Step() { Name = "CREATE_SESSION", Description = "This step open the browser" };
             newTest.Steps.Add(createSession);
             string jsonTest = JsonConvert.SerializeObject(newTest);
             return jsonTest;
@@ -23,13 +23,18 @@
         public static void Execute(this Test test)
         {
             IWebDriver testWebDriver = null;
-            using (testWebDriver)
+            try
             {
                 foreach (Step step in test.Steps)
                 {
                     step.Execute(ref testWebDriver);
-                }
-            }               
+                }                
+            }
+            finally
+            {
+                testWebDriver.Close();
+            }
+          
         }
 
         public static void Execute(this Step step, ref IWebDriver webDriver)
@@ -48,7 +53,7 @@
                     break;
                 case (StepType.TAKE_SCREENSHOT):
                     break;
-                case (StepType.RESIZE_WINWDOW):
+                case (StepType.RESIZE_WINDOW):
                     webDriver.ResizeWindow(SeleniumConfig.BrowserSize);
                     break;
                 default:
@@ -60,6 +65,7 @@
         public static void ExecuteTestFromJson(string jsonFile)
         {
             var test = TestBookHelper.ReadTestFromJson(jsonFile);
+            test.ConvertFromPageObject();
             test.Execute();
         }
     }

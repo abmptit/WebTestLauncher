@@ -1,0 +1,16 @@
+﻿{
+  "Name": "Google Page",
+  "Description": "This Test ...",
+  "Url": "http://www.google.com",
+  "Components": [
+    {
+      "Name": "Rechercher button",
+      "Type": 0,
+      "Description": "By cliking on this button we get search result.",
+      "Selector": {
+        "Type": 0,
+        "Xpath": "//input[@value='Recherche Google']"
+      }
+    }
+  ]
+}

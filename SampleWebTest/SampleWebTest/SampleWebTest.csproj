@@ -55,10 +55,12 @@
     <Compile Include="Common\Enum\SelectorType.cs" />
     <Compile Include="Common\Enum\StepType.cs" />
     <Compile Include="Common\Enum\BrowserType.cs" />
+    <Compile Include="Common\Helpers\EnumHelper.cs" />
     <Compile Include="SiteMap\Models\Component.cs" />
     <Compile Include="SiteMap\Models\Page.cs" />
     <Compile Include="SeleniumClient\Helpers\WebDriverHelper.cs" />
-    <Compile Include="TestBooks\Models\Selector.cs" />
+    <Compile Include="SiteMap\Models\Selector.cs" />
+    <Compile Include="SiteMap\Models\SiteMap.cs" />
     <Compile Include="TestBooks\Models\Test.cs" />
     <Compile Include="TestBooks\Models\Step.cs" />
     <Compile Include="Common\Helpers\ConfigHelper.cs" />
@@ -77,7 +79,9 @@
     <Content Include="TestBooks\Simple\CreateChromeSession.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <None Include="SiteMap\External\google.json" />
+    <EmbeddedResource Include="SiteMap\google.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
     <Content Include="TestBooks\Simple\SearchWithGoogle.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -92,7 +96,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Common\Model\" />
-    <Folder Include="TestedSite\" />
     <Folder Include="WebDriver\ChromeDriver\2.35\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
