@@ -95,7 +95,6 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Common\Model\" />
     <Folder Include="WebDriver\ChromeDriver\2.35\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -8,6 +8,7 @@
       "Type": 0,
       "Description": "By cliking on this button we get search result.",
       "Selector": {
+        "Name":  "SearchButton",
         "Type": 0,
         "Xpath": "//input[@value='Recherche Google']"
       }
