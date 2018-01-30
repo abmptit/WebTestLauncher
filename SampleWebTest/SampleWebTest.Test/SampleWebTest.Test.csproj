@@ -51,15 +51,15 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="TestBookManager\TestBook.cs" />
+    <Compile Include="Tests\TestBookManager\TestBook.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <Content Include="Testbooks\TestWithTwoSteps.json">
+    <Content Include="Resources\Testbooks\TestWithTwoSteps.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Testbooks\TestWithThreeSteps.json">
+    <Content Include="Resources\Testbooks\TestWithThreeSteps.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
